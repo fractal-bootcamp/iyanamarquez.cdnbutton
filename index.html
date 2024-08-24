@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Button Component</title>
+    <style>
+      .button-fractal {
+        background-color: #dc8145;
+        border: 2px solid #422800;
+        box-shadow: #422800 -4px 4px 0 0;
+        color: #422800;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 0 18px;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-fractal:hover {
+        background-color: #fff;
+      }
+
+      .button-fractal:active {
+        box-shadow: #221500 2px 2px 0 0;
+        transform: translate(2px, 2px);
+      }
+
+      @media (min-width: 768px) {
+        .button-fractal {
+          min-width: 120px;
+          padding: 0 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button-fractal" role="button">Built at Fractal Tech</button>
+  </body>
+</html>
+<!-- HTML !-->
